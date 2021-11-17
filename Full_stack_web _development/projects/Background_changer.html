@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background changer</title>
+        <style>
+            body{
+                padding: 20px 100px;
+                margin: 0px;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                margin: 0px auto;
+            }
+            p{
+                font-size: 18px;
+                text-align: justify;
+            }
+            .btn{
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                border: solid gray 2px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            #white{
+                background-color: white;
+            }
+            #aqua{
+                background-color: aquamarine;
+            }
+            #violet{
+                background-color: #ce9aff;
+            }
+            #black{
+                background-color: black;
+            }
+            #color-switcher{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="color-switcher">
+            <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+            <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+            <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+            <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+        </div>
+        <h1 class="text"> About Us </h1>
+        <img src="https://tyagain.com/wp-content/uploads/2019/10/iStock_000039291924_Medium.jpg" alt="">
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime facere commodi nobis mollitia eius laboriosam optio. Suscipit tempore nisi sapiente est consequuntur eligendi corrupti soluta magnam possimus, facere, consequatur voluptatem ullam, quidem mollitia dolore? Atque, autem debitis odit, accusamus iusto delectus reiciendis deserunt quisquam quidem, aliquam enim assumenda quibusdam voluptatum eaque consectetur ratione maxime perferendis dolore doloribus in corrupti rem aspernatur? Quod molestias placeat sed sequi laudantium aliquam numquam maxime dolore hic alias ullam corrupti consequatur doloribus nobis, eveniet ab fugiat facere illum optio deserunt, mollitia odio autem facilis! Praesentium saepe odit veritatis fugiat id recusandae officia rem eaque, iure facilis qui dolores dolorum voluptatem, architecto inventore, provident suscipit vitae. Quam totam dolore, eveniet illo culpa maxime reprehenderit repudiandae quidem magnam expedita voluptatem nostrum amet nobis nisi voluptate magni maiores sint laudantium fugit tempore veniam eos accusantium? Soluta voluptas, quas quidem voluptate, non totam perferendis odit minus aliquid optio sed iste iure deserunt. Vel ratione, aliquam ut porro minima esse reiciendis sit nihil nemo quis eos animi culpa fuga impedit velit dolores ad voluptatibus tempore corporis iusto, veritatis voluptas? Animi repudiandae dolore recusandae molestiae suscipit officiis beatae consequatur veritatis, dicta odit ut delectus saepe amet sed perferendis obcaecati provident. Perspiciatis illo autem minima veniam quo! Et quo omnis nesciunt, rem eum officiis autem architecto asperiores ad, fugit esse non voluptatem, illo eos dolorem eius voluptates maiores. Id dignissimos, voluptatibus enim voluptate nesciunt, officia harum aspernatur sed tempore expedita mollitia. Soluta nulla maxime delectus rerum eaque reprehenderit quibusdam nisi placeat fugiat necessitatibus ipsam, quasi unde quaerat est tempore. Atque aperiam, et, corrupti dolorum labore recusandae saepe illo blanditiis tempore repudiandae laborum deleniti praesentium rerum, officia quos. Quia reiciendis inventore accusamus eos molestiae aperiam possimus voluptates voluptate. Delectus quibusdam est asperiores temporibus doloremque, ullam odit accusamus adipisci ea laboriosam illum quae reiciendis ut quidem alias magni eius reprehenderit corporis quasi nam, non laudantium mollitia numquam. Minima, tenetur? Fugiat, quam deserunt molestiae asperiores, recusandae quia dolore distinctio aspernatur expedita tenetur assumenda perspiciatis impedit eos pariatur cumque iure soluta itaque nesciunt facere similique modi sint omnis ut? Magni impedit dolore officiis voluptates alias eos facilis quae animi quis? Obcaecati, temporibus? Alias expedita vel quod dolores sapiente, deserunt itaque, aliquam culpa deleniti velit esse ab quos, maiores illo aspernatur. Quae alias qui amet placeat tenetur, dignissimos exercitationem odio pariatur porro corporis illo rerum saepe nam, et non. Provident consequuntur, tempora similique eaque itaque voluptas, voluptatem nesciunt fugiat odit, omnis necessitatibus! Eaque magnam ab corrupti impedit est ipsum porro illo sed delectus cum, expedita pariatur fuga non dicta autem, fugit laudantium voluptatem maiores totam! Quod ad incidunt voluptates culpa nesciunt perspiciatis eum expedita voluptas qui autem quis deleniti iure dolorem, tempore placeat soluta quam adipisci neque enim, eligendi error cum est, laborum consectetur. Tenetur nobis quo temporibus quia praesentium natus, consectetur itaque eius harum distinctio fugit, atque dolorem laboriosam, alias hic sint mollitia aut! Laborum voluptate sunt, provident illo nemo earum dignissimos nihil recusandae asperiores consequuntur nobis eligendi amet, voluptatibus suscipit nulla alias minima molestias!
+        </p>
+        <script>
+            function changeBG(color){
+                document.body.style.backgroundColor = color;
+                let txt = document.getElementsByClassName("text");
+                if(color == "#000000"){
+                    for(let elm of txt){
+                        elm.style.color = "white";
+                    }
+                }else{
+                        for(let elm of txt){
+                        elm.style.color = "black";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
