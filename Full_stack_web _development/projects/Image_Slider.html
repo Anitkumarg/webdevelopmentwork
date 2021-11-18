@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Slider</title>
+        <link rel="stylesheet" href="CSS/Image_Slider.css">
+    </head>
+    <body>
+        <div class="slide-container">
+            <div class="slide">
+                <img src="https://img.etimg.com/photo/msid-68721421,quality-100/nature.jpg" alt="">
+                <div class="caption">Caption Text 1</div>
+            </div>
+            <div class="slide">
+                <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg" alt="">
+                <div class="caption">Caption Text 2</div>
+            </div>
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg" alt="">
+                <div class="caption">Caption Text 3</div>
+            </div>
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" alt="">
+                <div class="caption">Caption Text 4</div>
+            </div>
+            <span class="arrow prev" onclick="controller(-1)">&#10094</span>
+            <span class="arrow next" onclick="controller(1)">&#10095</span>
+        </div>
+        <script src="javascript/Image_Slider.js"></script>
+    </body>
+</html>
