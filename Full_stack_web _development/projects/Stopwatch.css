@@ -1,0 +1,39 @@
+body{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+#container{
+    color: cornsilk;
+}
+.digit{
+    font-size: 120px;
+    font-weight: bold;
+}
+.text{
+    font-size: 40px;
+    font-weight: bold;
+}
+#btn-container{
+    text-align: center;
+    margin-top: 40px;
+}
+.btn{
+    margin: 0px 10px;
+    padding: 10px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0px;
+    color: white;
+}
+#start{
+    background-color: green
+}
+#stop{
+    background-color: rgba(255, 0, 0, 0.815);
+}
+#reset{
+    background-color: purple
+}
